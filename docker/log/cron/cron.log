@@ -1,0 +1,50 @@
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.email' doesn't exist in /var/www/app/DB.php:37
+Stack trace:
+#0 [internal function]: PDO->prepare('UPDATE email\r\n ...')
+#1 /var/www/app/DB.php(37): call_user_func_array(Array, Array)
+#2 /var/www/app/Models/Email.php(48): App\DB->__call('prepare', Array)
+#3 /var/www/app/Services/EmailService.php(30): App\Models\Email->markEmailSent(1)
+#4 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#5 {main}
+  thrown in /var/www/app/DB.php on line 37
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.email' doesn't exist in /var/www/app/DB.php:37
+Stack trace:
+#0 [internal function]: PDO->prepare('UPDATE email\r\n ...')
+#1 /var/www/app/DB.php(37): call_user_func_array(Array, Array)
+#2 /var/www/app/Models/Email.php(48): App\DB->__call('prepare', Array)
+#3 /var/www/app/Services/EmailService.php(30): App\Models\Email->markEmailSent(1)
+#4 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#5 {main}
+  thrown in /var/www/app/DB.php on line 37
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.email' doesn't exist in /var/www/app/DB.php:37
+Stack trace:
+#0 [internal function]: PDO->prepare('UPDATE email\r\n ...')
+#1 /var/www/app/DB.php(37): call_user_func_array(Array, Array)
+#2 /var/www/app/Models/Email.php(48): App\DB->__call('prepare', Array)
+#3 /var/www/app/Services/EmailService.php(30): App\Models\Email->markEmailSent(1)
+#4 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#5 {main}
+  thrown in /var/www/app/DB.php on line 37
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.email' doesn't exist in /var/www/app/DB.php:37
+Stack trace:
+#0 [internal function]: PDO->prepare('UPDATE email\r\n ...')
+#1 /var/www/app/DB.php(37): call_user_func_array(Array, Array)
+#2 /var/www/app/Models/Email.php(48): App\DB->__call('prepare', Array)
+#3 /var/www/app/Services/EmailService.php(30): App\Models\Email->markEmailSent(1)
+#4 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#5 {main}
+  thrown in /var/www/app/DB.php on line 37
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.email' doesn't exist in /var/www/app/DB.php:37
+Stack trace:
+#0 [internal function]: PDO->prepare('UPDATE email\r\n ...')
+#1 /var/www/app/DB.php(37): call_user_func_array(Array, Array)
+#2 /var/www/app/Models/Email.php(48): App\DB->__call('prepare', Array)
+#3 /var/www/app/Services/EmailService.php(30): App\Models\Email->markEmailSent(1)
+#4 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#5 {main}
+  thrown in /var/www/app/DB.php on line 37
