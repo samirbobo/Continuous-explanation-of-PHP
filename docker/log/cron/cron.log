@@ -3201,3 +3201,35 @@ Stack trace:
 #6 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
 #7 {main}
   thrown in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php on line 49
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.email' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php:130
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(130): PDOStatement->execute(Array)
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(249): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(52): Doctrine\DBAL\Statement->executeStatement(Array)
+#4 /var/www/app/Services/EmailService.php(31): App\Models\Email->markEmailSent(1)
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.email' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Exception.php:28
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(132): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(249): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(52): Doctrine\DBAL\Statement->executeStatement(Array)
+#4 /var/www/app/Services/EmailService.php(31): App\Models\Email->markEmailSent(1)
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Exception\TableNotFoundException: An exception occurred while executing a query: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.email' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php:49
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Connection.php(1939): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 /var/www/vendor/doctrine/dbal/src/Connection.php(1881): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(194): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'UPDATE email\r\n ...', Array, Array)
+#3 /var/www/vendor/doctrine/dbal/src/Statement.php(249): Doctrine\DBAL\Statement->execute(Array)
+#4 /var/www/app/Models/Email.php(52): Doctrine\DBAL\Statement->executeStatement(Array)
+#5 /var/www/app/Services/EmailService.php(31): App\Models\Email->markEmailSent(1)
+#6 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#7 {main}
+  thrown in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php on line 49
