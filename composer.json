@@ -3,7 +3,8 @@
         "ext-pdo": "*",
         "vlucas/phpdotenv": "^5.3",
         "psr/container": "^2.0",
-        "symfony/mailer": "^6.1"
+        "symfony/mailer": "^6.1",
+        "doctrine/dbal": "^4.2"
     },
     "autoload": {
         "psr-4": {

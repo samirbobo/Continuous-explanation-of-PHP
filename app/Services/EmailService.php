@@ -1,12 +1,13 @@
 <?php
 
-declare(strict_types = 1);
+declare (strict_types = 1);
 
 namespace App\Services;
 
 use App\Enums\EmailStatus;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
+
 class EmailService
 {
     // بيجيب المودل بتاع الميل والمرسل عشان يبعت الرسايل بقا من الداتا بيز للسيرفر
@@ -17,17 +18,17 @@ class EmailService
     public function sendQueuedEmails(): void
     {
         $emails = $this->emailModel->getEmailsByStatus(EmailStatus::Queue);
-        foreach($emails as $email) {
-            $meta = json_decode($email->meta, true);
+        foreach ($emails as $email) {
+            $meta = json_decode($email['meta'], true);
             $emailMessage = (new Email())
                 ->from($meta['from'])
                 ->to($meta['to'])
-                ->subject($email->subject)
-                ->text($email->text_body)
-                ->html($email->html_body);
+                ->subject($email['subject'])
+                ->text($email['text_body'])
+                ->html($email['html_body']);
             $this->mailer->send($emailMessage);
 
-            $this->emailModel->markEmailSent($email->id);
+            $this->emailModel->markEmailSent($email['id']);
         }
     }
 }
