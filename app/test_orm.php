@@ -12,7 +12,6 @@ declare (strict_types = 1);
 // إلى استعلامات قاعدة بيانات والعكس، مما يجعل البرمجة أكثر سهولة وقابلية للصيانة.
 
 use App\Entity\Invoice;
-use App\Entity\InvoiceItem;
 use App\Enums\InvoiceStatus;
 use Doctrine\ORM\EntityManager;
 use Doctrine\ORM\Tools\Setup;
@@ -24,7 +23,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 $dotenv = Dotenv::createImmutable(dirname(__DIR__));
 $dotenv->load();
 
-// بجيب البيانات بتاع السيرفر بتاع الداتا بيز 
+// بجيب البيانات بتاع السيرفر بتاع الداتا بيز
 $params = [
     'host' => $_ENV["DB_HOST"],
     'user' => $_ENV["DB_USER"],
@@ -38,41 +37,66 @@ $paths = [__DIR__ . '/Entity'];
 
 // entityManager دا الي بيربط الكلاساس علي انها جداول و بيدير الاوامر الخاصه بي الداتا بيز
 $entityManager = EntityManager::create(
-  $params, 
-  Setup::createAttributeMetadataConfiguration($paths)
+    $params,
+    Setup::createAttributeMetadataConfiguration($paths)
 );
 
-$items = [["Item 1", 1, 15], ["Item 2", 2, 7.5], ["Item 3", 4, 3.75]];
+// createQueryBuilder فانكشن بتخلني اكتب اوامر الداتا بيز علي شكل فانكشنس لتسهيل التعامل بين الداتا بيز و بي اتش بيه
+$queryBuilder = $entityManager->createQueryBuilder();
 
-// Invoice بستدعي الجدول بتاع ال
-// وبضيف فيه كل البيانات الي انا عايزها في الداتا بيز
-$invoice = (new Invoice())
-    ->setAmount(45)
-    ->setInvoiceNumber("1")
-    ->setStatus(InvoiceStatus::Pending)
-    ->setCreatedAt(new DateTime());
+$query = $queryBuilder
+    ->select('i.createAt', 'i.amount')
+    ->from(Invoice::class, "i")
+    ->where(
+        $queryBuilder->expr()->andX(
+            $queryBuilder->expr()->lt("i.amount", ":amount"),
+            $queryBuilder->expr()->orX(
+                $queryBuilder->expr()->eq("i.status", ":status"),
+                $queryBuilder->expr()->gte("i.createAt", ":date")
+            )
+        )
+    )
+    ->setParameter("amount", 100)
+    ->setParameter("status", InvoiceStatus::Paid)
+    ->setParameter("date", "2022-03-25 00:00:00")
+    ->orderBy("i.createAt", "desc")
+    ->getQuery();
 
-  // ولان كل فاتوره ليها بيانات تانيه جواها انشاء جدول تاني وفي كل فاتوره بضيف فيها البيانات ديه
-// foreach ($items as [$description, $quantity, $unitPrice]) {
-//     $item = (new InvoiceItem())
-//         ->setDescription($description)
-//         ->setQuantity($quantity)
-//         ->setUnitPrice($unitPrice);
+//getDQL الفانكشن ديه بتعرض شكل الكويري الي كتبتها باستخدام الفانكشنس الي في السطور السابقه وفايدتها انك تتاكد
+// هل الكويري بتاعتك هتترجم صح ولا في اي مشكله
+echo $query->getDQL();
+// النتيجه
+// SELECT i.createAt, i.amount FROM App\Entity\Invoice i WHERE i.amount < :amount AND (i.status = :status OR i.createAt >= :date) ORDER BY i.createAt desc
 
-//     // بعد ما بضيف البيانات في الجدول التاني بربطها في الجدول الاساسي وبيضاف علي انه صف جديد 
-//     $invoice->addItem($item);
-//     // الامر دا هو الي بيخلني انتقل من مرحله ربط كلاساس ببعض علي مستوي ال بي اتش بيه الي ربط في الداتا بيز
-//     $entityManager->persist($invoice);
-// }
-// $entityManager->persist($invoice);
+/*
+التلت سطور دول لما بحطهم بيدوني النتيجه الي تحتهم وانا عايز اعمل شرط مختلف وعشان كده المكتبه موفره
+فانكشن تقدر تعمل بيها شرط خاص يناسب شغلك بشكل مخصوص
+->where("i.amount < :amount")
+->andWhere("i.status = :status")
+->orWhere("i.createAt >= :date")
+WHERE (i.amount < :amount AND i.status = :status) OR i.createAt >= :date دا مش مطلوب
+WHERE i.amount < :amount AND (i.status = :status OR i.createAt >= :date) دا المطلوب وعشان اوصله بعمل الاومر التاليه
 
+custom where
+expr => new expression
+andX => and where
+orX => or where
+lt => smaller thant <=
+eq => equal than =
+gte => getter than or equal >=
+gt => getter than >=
+where(
+        $queryBuilder->expr()->andX(
+            $queryBuilder->expr()->lt("i.amount", ":amount"),
+            $queryBuilder->expr()->orX(
+                $queryBuilder->expr()->eq("i.status", ":status"),
+                $queryBuilder->expr()->gte("i.createAt", ":date")
+            )
+        )
+    )
+*/
+exit;
 
-// الامر دا بيخلني ابحث علي صف معين في الجدول علي اساس الاي ديه
-$invoice = $entityManager->find(Invoice::class, 1);
-// وهنا غيرت قيمه كانت موجوده في عمود من اعمدته
-$invoice->setStatus(InvoiceStatus::Paid);
-// getItems لان الجدول بتاعي مربوط بجدول تاني في الفانكشن ديه بتودني للجدول التاني دا
-// get(0) بقوله اول صف فيه بقا غير فيه قيمه من قيمه الاعمده بتاعته
-$invoice->getItems()->get(0)->setDescription("Foo Bar");
-// الامر دا هو الي بينفذ الكود
-$entityManager->flush();
+$invoices = $query->getResult();
+
+var_dump($invoices);
