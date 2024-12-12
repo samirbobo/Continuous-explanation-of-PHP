@@ -42,6 +42,9 @@ class Invoice
     #[Column(name: 'create_at')]
     private \DateTime $createAt;
 
+    #[Column(name: 'due_date')]
+    private \DateTime $dueDate;
+
     // OneToMany هنا استخدمت ربط بين الكلاس دا الي اتحول الي جدول بالجدول التاني بعلاقه 
     #[OneToMany(targetEntity: InvoiceItem::class, mappedBy: 'invoice', cascade: ['persist', 'remove'])]
     private Collection $items;
