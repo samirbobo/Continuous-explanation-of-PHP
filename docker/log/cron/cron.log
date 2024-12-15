@@ -8193,3 +8193,326 @@ Stack trace:
 #6 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
 #7 {main}
   thrown in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php on line 49
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php:130
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(130): PDOStatement->execute(Array)
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#4 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Exception.php:28
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(132): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#4 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Exception\TableNotFoundException: An exception occurred while executing a query: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php:49
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Connection.php(1939): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 /var/www/vendor/doctrine/dbal/src/Connection.php(1881): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(194): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'SELECT *\r\n     ...', Array, Array)
+#3 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#4 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#5 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#6 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#7 {main}
+  thrown in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php on line 49
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php:130
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(130): PDOStatement->execute(Array)
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#4 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Exception.php:28
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(132): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#4 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Exception\TableNotFoundException: An exception occurred while executing a query: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php:49
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Connection.php(1939): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 /var/www/vendor/doctrine/dbal/src/Connection.php(1881): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(194): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'SELECT *\r\n     ...', Array, Array)
+#3 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#4 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#5 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#6 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#7 {main}
+  thrown in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php on line 49
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php:130
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(130): PDOStatement->execute(Array)
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#4 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Exception.php:28
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(132): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#4 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Exception\TableNotFoundException: An exception occurred while executing a query: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php:49
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Connection.php(1939): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 /var/www/vendor/doctrine/dbal/src/Connection.php(1881): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(194): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'SELECT *\r\n     ...', Array, Array)
+#3 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#4 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#5 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#6 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#7 {main}
+  thrown in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php on line 49
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php:130
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(130): PDOStatement->execute(Array)
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#4 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Exception.php:28
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(132): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#4 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Exception\TableNotFoundException: An exception occurred while executing a query: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php:49
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Connection.php(1939): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 /var/www/vendor/doctrine/dbal/src/Connection.php(1881): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(194): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'SELECT *\r\n     ...', Array, Array)
+#3 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#4 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#5 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#6 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#7 {main}
+  thrown in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php on line 49
+
+Fatal error: Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php:130
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(130): PDOStatement->execute(Array)
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#4 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/PDO/Exception.php:28
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Driver/PDO/Statement.php(132): Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 /var/www/vendor/doctrine/dbal/src/Statement.php(190): Doctrine\DBAL\Driver\PDO\Statement->execute(Array)
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#3 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#4 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#5 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#6 {main}
+
+Next Doctrine\DBAL\Exception\TableNotFoundException: An exception occurred while executing a query: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_db.emails' doesn't exist in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php:49
+Stack trace:
+#0 /var/www/vendor/doctrine/dbal/src/Connection.php(1939): Doctrine\DBAL\Driver\API\MySQL\ExceptionConverter->convert(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#1 /var/www/vendor/doctrine/dbal/src/Connection.php(1881): Doctrine\DBAL\Connection->handleDriverException(Object(Doctrine\DBAL\Driver\PDO\Exception), Object(Doctrine\DBAL\Query))
+#2 /var/www/vendor/doctrine/dbal/src/Statement.php(194): Doctrine\DBAL\Connection->convertExceptionDuringQuery(Object(Doctrine\DBAL\Driver\PDO\Exception), 'SELECT *\r\n     ...', Array, Array)
+#3 /var/www/vendor/doctrine/dbal/src/Statement.php(224): Doctrine\DBAL\Statement->execute(Array)
+#4 /var/www/app/Models/Email.php(41): Doctrine\DBAL\Statement->executeQuery(Array)
+#5 /var/www/app/Services/EmailService.php(20): App\Models\Email->getEmailsByStatus(Object(App\Enums\EmailStatus))
+#6 /var/www/scripts/email.php(10): App\Services\EmailService->sendQueuedEmails()
+#7 {main}
+  thrown in /var/www/vendor/doctrine/dbal/src/Driver/API/MySQL/ExceptionConverter.php on line 49
+
+Parse error: syntax error, unexpected token "public" in /var/www/app/App.php on line 32
+
+Fatal error: Uncaught TypeError: App\App::__construct(): Argument #1 ($container) must be of type Illuminate\Container\Container, App\Container given, called in /var/www/scripts/email.php on line 9 and defined in /var/www/app/App.php:20
+Stack trace:
+#0 /var/www/scripts/email.php(9): App\App->__construct(Object(App\Container))
+#1 {main}
+  thrown in /var/www/app/App.php on line 20
+
+Fatal error: Uncaught TypeError: App\App::__construct(): Argument #1 ($container) must be of type Illuminate\Container\Container, App\Container given, called in /var/www/scripts/email.php on line 9 and defined in /var/www/app/App.php:20
+Stack trace:
+#0 /var/www/scripts/email.php(9): App\App->__construct(Object(App\Container))
+#1 {main}
+  thrown in /var/www/app/App.php on line 20
+
+Fatal error: Uncaught TypeError: App\App::__construct(): Argument #1 ($container) must be of type Illuminate\Container\Container, App\Container given, called in /var/www/scripts/email.php on line 9 and defined in /var/www/app/App.php:20
+Stack trace:
+#0 /var/www/scripts/email.php(9): App\App->__construct(Object(App\Container))
+#1 {main}
+  thrown in /var/www/app/App.php on line 20
+
+Fatal error: Uncaught TypeError: App\App::__construct(): Argument #1 ($container) must be of type Illuminate\Container\Container, App\Container given, called in /var/www/scripts/email.php on line 9 and defined in /var/www/app/App.php:20
+Stack trace:
+#0 /var/www/scripts/email.php(9): App\App->__construct(Object(App\Container))
+#1 {main}
+  thrown in /var/www/app/App.php on line 20
+
+Fatal error: Uncaught TypeError: App\App::__construct(): Argument #1 ($container) must be of type Illuminate\Container\Container, App\Container given, called in /var/www/scripts/email.php on line 9 and defined in /var/www/app/App.php:20
+Stack trace:
+#0 /var/www/scripts/email.php(9): App\App->__construct(Object(App\Container))
+#1 {main}
+  thrown in /var/www/app/App.php on line 20
+
+Fatal error: Uncaught TypeError: App\App::__construct(): Argument #1 ($container) must be of type Illuminate\Container\Container, App\Container given, called in /var/www/scripts/email.php on line 9 and defined in /var/www/app/App.php:20
+Stack trace:
+#0 /var/www/scripts/email.php(9): App\App->__construct(Object(App\Container))
+#1 {main}
+  thrown in /var/www/app/App.php on line 20
+
+Fatal error: Uncaught TypeError: App\App::__construct(): Argument #1 ($container) must be of type Illuminate\Container\Container, App\Container given, called in /var/www/scripts/email.php on line 9 and defined in /var/www/app/App.php:18
+Stack trace:
+#0 /var/www/scripts/email.php(9): App\App->__construct(Object(App\Container))
+#1 {main}
+  thrown in /var/www/app/App.php on line 18
+
+Warning: include(/var/www/vendor/composer/../../app/Model.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Model.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Model" not found in /var/www/app/Models/Email.php:13
+Stack trace:
+#0 /var/www/vendor/composer/ClassLoader.php(576): include()
+#1 /var/www/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/var/www/vendor...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Emai...')
+#3 /var/www/app/Container.php(44): ReflectionClass->__construct('App\\Models\\Emai...')
+#4 /var/www/app/Container.php(27): App\Container->resolve('App\\Models\\Emai...')
+#5 /var/www/app/Container.php(86): App\Container->get('App\\Models\\Emai...')
+#6 [internal function]: App\Container->App\{closure}(Object(ReflectionParameter))
+#7 /var/www/app/Container.php(69): array_map(Object(Closure), Array)
+#8 /var/www/app/Container.php(27): App\Container->resolve('App\\Services\\Em...')
+#9 /var/www/scripts/email.php(10): App\Container->get('App\\Services\\Em...')
+#10 {main}
+  thrown in /var/www/app/Models/Email.php on line 13
+
+Warning: include(/var/www/vendor/composer/../../app/Model.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Model.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Model" not found in /var/www/app/Models/Email.php:13
+Stack trace:
+#0 /var/www/vendor/composer/ClassLoader.php(576): include()
+#1 /var/www/vendor/composer/ClassLoader.php(427): Composer\Autoload\{closure}('/var/www/vendor...')
+#2 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Models\\Emai...')
+#3 /var/www/app/Container.php(44): ReflectionClass->__construct('App\\Models\\Emai...')
+#4 /var/www/app/Container.php(27): App\Container->resolve('App\\Models\\Emai...')
+#5 /var/www/app/Container.php(86): App\Container->get('App\\Models\\Emai...')
+#6 [internal function]: App\Container->App\{closure}(Object(ReflectionParameter))
+#7 /var/www/app/Container.php(69): array_map(Object(Closure), Array)
+#8 /var/www/app/Container.php(27): App\Container->resolve('App\\Services\\Em...')
+#9 /var/www/scripts/email.php(10): App\Container->get('App\\Services\\Em...')
+#10 {main}
+  thrown in /var/www/app/Models/Email.php on line 13
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8

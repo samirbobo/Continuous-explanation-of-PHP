@@ -19,7 +19,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property Carbon        $due_date
 
  * @property-read Collection $items
-*/
+ */
 
 class Invoice extends Model
 {
@@ -30,12 +30,26 @@ class Invoice extends Model
     // عشان اشرحله البيانات ديه نوعها ايه وتتخزن بالنوع الي انا عايزه
     protected $casts = [
         'created_at' => 'datetime',
-        'due_date'   => 'datetime',
-        'status'     => InvoiceStatus::class,
+        'due_date' => 'datetime',
+        'status' => InvoiceStatus::class,
     ];
 
+    // دي فانكشن جاهزه في المكتب وبتعمل شغل معين فانا استدعتها عشان اعمل عليها اوفر رايت واعدل في واظفتها
+    // eloquent مكتبه
+    public static function booted()
+    {
+        // static::creating اسلوب جاهز في المكتبه برده عشان انفذ امر معين بشكل سريع
+        // وهنا بيضيف عشر ايام في المستقبل كتاريخ انتهاء لحاله الصف الجديد الي هضيفه ف الجدول
+        static::creating(function (Invoice $invoice) {
+            if ($invoice->isClean('due_date')) {
+                $invoice->due_date = (new Carbon())->addDays(10);
+            }
+        });
+    }
+
     // one to many الفانكشن ديه عشان اعمل ربط بين الجدولين بعلاقه
-    public function items(): HasMany {
+    public function items(): HasMany
+    {
         return $this->hasMany(InvoiceItem::class);
     }
 }
