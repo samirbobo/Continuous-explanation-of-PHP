@@ -8516,3 +8516,489 @@ Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts
 Stack trace:
 #0 {main}
   thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
+
+Warning: include(/var/www/vendor/composer/../../app/Container.php): Failed to open stream: No such file or directory in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Warning: include(): Failed opening '/var/www/vendor/composer/../../app/Container.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/vendor/composer/ClassLoader.php on line 576
+
+Fatal error: Uncaught Error: Class "App\Container" not found in /var/www/scripts/email.php:8
+Stack trace:
+#0 {main}
+  thrown in /var/www/scripts/email.php on line 8
