@@ -19,6 +19,11 @@ class CurlController
         $email = "samirelanany555@gmail.com";
         $result = $this->emailValidationService->verify($email);
 
+        $score = $result->score;
+        $deliverable = $result->isDeliverable;
+
+        var_dump($score, $deliverable);
+
         echo '<pre>';
         print_r($result);
         echo '</pre>';

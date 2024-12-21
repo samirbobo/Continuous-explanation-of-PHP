@@ -42,8 +42,8 @@ class App
         $this->config = new Config($_ENV);
         $this->initDb($this->config->db);
         $this->container->bind(MailerInterface::class, fn() => new CustomMailer($this->config->mailer['dsn']));
-        $this->container->bind(EmailValidationInterface::class, fn() => new EmailableEmailValidationService($this->config->apikeys['emailable']));
-        // $this->container->bind(EmailValidationInterface::class, fn() => new EmailValidationService($this->config->apikeys['abstract_api_email_validation']));
+        // $this->container->bind(EmailValidationInterface::class, fn() => new EmailableEmailValidationService($this->config->apikeys['emailable']));
+        $this->container->bind(EmailValidationInterface::class, fn() => new EmailValidationService($this->config->apikeys['abstract_api_email_validation']));
 
         return $this;
     }

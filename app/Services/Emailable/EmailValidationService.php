@@ -5,6 +5,7 @@ declare (strict_types = 1);
 namespace App\Services\Emailable;
 
 use App\Contracts\EmailValidationInterface;
+use App\DTO\EmailValidationResult;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\HandlerStack;
@@ -22,7 +23,7 @@ class EmailValidationService implements EmailValidationInterface
 
     }
 
-    public function verify(string $email): array
+    public function verify(string $email): EmailValidationResult
     {
       // في حاله ان الطلب للسيرفر كان في مشكله او خطاء بستخدم الاسلوب دا عشان يطبع رساله توضحيه للمستخدم عشان يفهم في ايه
       $stack = HandlerStack::create();
@@ -46,7 +47,8 @@ class EmailValidationService implements EmailValidationInterface
 
         $response = $client->get("verify", ["query" => $params]);
 
-        return json_decode($response->getBody()->getContents(), true);
+        $body = json_decode($response->getBody()->getContents(), true);
+        return new EmailValidationResult($body["score"], $body['state'] === 'deliverable');
     }
 
     // دا الكود لاكتشاف اي اخطاء في الطلبات
