@@ -7,12 +7,14 @@ namespace App;
 use App\Contracts\EmailValidationInterface;
 use App\Exceptions\RouteNotFoundException;
 use App\Services\AbstractApi\EmailValidationService;
-use App\Services\Emailable\EmailValidationService as EmailableEmailValidationService;
 use Dotenv\Dotenv;
 use Illuminate\Container\Container;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Events\Dispatcher;
 use Symfony\Component\Mailer\MailerInterface;
+use Twig\Environment;
+use Twig\Extra\Intl\IntlExtension;
+use Twig\Loader\FilesystemLoader;
 
 class App
 {
@@ -41,9 +43,21 @@ class App
 
         $this->config = new Config($_ENV);
         $this->initDb($this->config->db);
+
+        $loader = new FilesystemLoader(VIEW_PATH);
+        $twig = new Environment($loader, [
+            'cache' => STORAGE_PATH . '/cache',
+            // عشان تعيد تحميل ملف الكاش من غيرها اي تعديل مش هيظهر في الصفحه الا بعد حذف الملف ودا شي غير طبيعي
+            'auto_reload' => true
+        ]);
+
+        $twig->addExtension(new IntlExtension());
+
         $this->container->bind(MailerInterface::class, fn() => new CustomMailer($this->config->mailer['dsn']));
         // $this->container->bind(EmailValidationInterface::class, fn() => new EmailableEmailValidationService($this->config->apikeys['emailable']));
         $this->container->bind(EmailValidationInterface::class, fn() => new EmailValidationService($this->config->apikeys['abstract_api_email_validation']));
+
+        $this->container->singleton(Environment::class, fn() => $twig);
 
         return $this;
     }

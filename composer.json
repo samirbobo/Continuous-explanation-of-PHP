@@ -10,7 +10,9 @@
     "doctrine/migrations": "^3.8",
     "illuminate/database": "^10.48",
     "illuminate/events": "^10.48",
-    "guzzlehttp/guzzle": "^7.9"
+    "guzzlehttp/guzzle": "^7.9",
+    "twig/twig": "^3.17",
+    "twig/intl-extra": "^3.17"
   },
   "autoload": {
     "psr-4": {
