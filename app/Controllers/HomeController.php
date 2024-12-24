@@ -22,7 +22,7 @@ class HomeController
     #[Route('/home', HttpMethod::Head)]
     public function index(): View
     {
-        // $this->invoiceService->process([], 25);
+        throw new \RuntimeException('test');
 
         return View::make('index');
     }
