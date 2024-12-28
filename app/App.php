@@ -4,14 +4,12 @@ declare (strict_types = 1);
 
 namespace App;
 
-use App\Contracts\EmailValidationInterface;
 use App\Exceptions\RouteNotFoundException;
-use App\Services\AbstractApi\EmailValidationService;
+use Doctrine\ORM\EntityManager;
+use Doctrine\ORM\ORMSetup;
 use Dotenv\Dotenv;
 use Illuminate\Container\Container;
-use Illuminate\Database\Capsule\Manager as Capsule;
-use Illuminate\Events\Dispatcher;
-use Symfony\Component\Mailer\MailerInterface;
+use App\Services\AbstractApi\EmailValidationService;
 use Twig\Environment;
 use Twig\Extra\Intl\IntlExtension;
 use Twig\Loader\FilesystemLoader;
@@ -27,38 +25,33 @@ class App
     ) {
     }
 
-    public function initDb(array $config)
-    {
-        $capsule = new Capsule();
-        $capsule->addConnection($config);
-        $capsule->setEventDispatcher(new Dispatcher($this->container));
-        $capsule->setAsGlobal();
-        $capsule->bootEloquent();
-    }
-
     public function boot(): static
     {
         $dotenv = Dotenv::createImmutable(dirname(__DIR__));
         $dotenv->load();
 
         $this->config = new Config($_ENV);
-        $this->initDb($this->config->db);
 
-        $loader = new FilesystemLoader(VIEW_PATH);
-        $twig = new Environment($loader, [
-            'cache' => STORAGE_PATH . '/cache',
-            // عشان تعيد تحميل ملف الكاش من غيرها اي تعديل مش هيظهر في الصفحه الا بعد حذف الملف ودا شي غير طبيعي
-            'auto_reload' => true
-        ]);
+        $twig = new Environment(
+            new FilesystemLoader(VIEW_PATH),
+            [
+                'cache' => STORAGE_PATH . '/cache',
+                // عشان تعيد تحميل ملف الكاش من غيرها اي تعديل مش هيظهر في الصفحه الا بعد حذف الملف ودا شي غير طبيعي
+                'auto_reload' => true
+            ]
+        );
 
         $twig->addExtension(new IntlExtension());
 
-        $this->container->bind(MailerInterface::class, fn() => new CustomMailer($this->config->mailer['dsn']));
-        // $this->container->bind(EmailValidationInterface::class, fn() => new EmailableEmailValidationService($this->config->apikeys['emailable']));
-        $this->container->bind(EmailValidationInterface::class, fn() => new EmailValidationService($this->config->apikeys['abstract_api_email_validation']));
-
         $this->container->singleton(Environment::class, fn() => $twig);
 
+        $this->container->singleton(
+            EntityManager::class,
+            fn() => EntityManager::create(
+                $this->config->db,
+                ORMSetup::createAttributeMetadataConfiguration([__DIR__ . '/Entity'])
+            )
+        );
         return $this;
     }
 
@@ -69,7 +62,7 @@ class App
         } catch (RouteNotFoundException) {
             http_response_code(404);
 
-            echo View::make('error/404');
+            echo $this->container->get(Environment::class)->render('error/404.twig');
         }
     }
 }

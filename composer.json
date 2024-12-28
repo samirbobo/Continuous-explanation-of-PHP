@@ -2,17 +2,15 @@
   "require": {
     "ext-pdo": "*",
     "vlucas/phpdotenv": "^5.3",
-    "psr/container": "^2.0",
-    "symfony/mailer": "^6.1",
     "doctrine/dbal": "^3.3",
     "doctrine/orm": "^2.11",
-    "symfony/cache": "^6.0",
+    "symfony/cache": "^5.0",
     "doctrine/migrations": "^3.8",
-    "illuminate/database": "^10.48",
-    "illuminate/events": "^10.48",
-    "guzzlehttp/guzzle": "^7.9",
     "twig/twig": "^3.17",
-    "twig/intl-extra": "^3.17"
+    "twig/intl-extra": "^3.17",
+    "slim/slim": "4.*",
+    "slim/twig-view": "^3.4",
+    "slim/psr7": "^1.7"
   },
   "autoload": {
     "psr-4": {
